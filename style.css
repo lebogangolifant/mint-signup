@@ -17,10 +17,23 @@ body {
 
 /* header */
 
+
+/* remove header on small devices */
+
+@media screen and (max-width: 500px) {
+    .signup {
+        display: none;
+    }
+}
+
 .signup-text {
     text-align: right;
     padding: 10px 60px 0 0;
     line-height: 1.5;
+}
+
+.signup-text a {
+    color: #0077c5;
 }
 
 button {
@@ -59,17 +72,26 @@ button {
 /* header */
 
 .main-logo img {
-    width: 200px;
+    width: 120px;
     margin-bottom: 6px;
+}
+
+
+/* removes margin on small devices */
+
+@media screen and (max-width: 500px) {
+    .main-logo img {
+        margin-top: -20px;
+    }
 }
 
 
 /* nav services logo */
 
 .services-logo img {
-    width: 30px;
-    margin-bottom: 8px;
-    display: inline-block;
+    width: 28px;
+    margin: 0 0 8px 8px;
+    vertical-align: middle;
 }
 
 #mint-logo {
@@ -77,9 +99,148 @@ button {
 }
 
 #mint-text {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .logo-text {
-    font-size: 18px;
+    font-size: 16px;
+}
+
+
+/* form section */
+
+.form-container {
+    background-color: #fff;
+    font-size: 14px;
+    width: 380px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+    overflow: visible;
+}
+
+.form-header {
+    text-align: center;
+    color: #4c4c4c;
+    line-height: 1.1;
+}
+
+.form-header h1 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.form-header p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 1px;
+}
+
+
+/* removes <p> on desktop screen */
+
+@media screen and (min-width: 500px) {
+    #display-none {
+        display: none;
+    }
+}
+
+.form-header a {
+    font-size: 12px;
+    color: #0077c5;
+    text-decoration: none;
+}
+
+label {
+    display: block;
+    margin: 12px 0 4px 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    color: #4c4c4c;
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+}
+
+.signup-section p {
+    font-size: 10px;
+    color: #4c4c4c;
+}
+
+::placeholder {
+    font-size: 13px;
+    color: #d8d8d8;
+}
+
+.create-acc-btn {
+    margin-top: 28px;
+    width: 100%;
+}
+
+.create-acc-btn i {
+    margin-right: 8px;
+}
+
+
+/*  form footer */
+
+.terms-condition {
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+    color: #757575;
+}
+
+.terms-condition a {
+    color: #0077c5;
+    text-decoration: none;
+}
+
+.captcha-footer {
+    margin: 30px -30px -30px;
+    background-color: #eceef1;
+}
+
+.captcha-footer p {
+    margin: 30px 0 0 0;
+    padding: 16px;
+    text-align: center;
+    font-size: 10px;
+    color: #8d9096;
+}
+
+.captcha-footer a {
+    color: #0077c5;
+    text-decoration: none;
+}
+
+
+/* footer */
+
+footer {
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    color: #505050;
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: 400;
+    width: 90%;
+}
+
+.footer-link a {
+    color: #505050;
+    font-size: 12px;
+    padding-right: 10px;
+    text-decoration: none;
 }
