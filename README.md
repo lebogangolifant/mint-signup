@@ -1,4 +1,4 @@
-# Mint's signup page Clone
+# Mint's sign-up form Clone
 Rebuilt the form used by Mint for signing up new users.
 
 ## Acknowledgments
